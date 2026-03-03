@@ -1,10 +1,10 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// CORS - lock this down to your ClickFunnels domain in production
 const ALLOWED_ORIGINS = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(",")
   : ["*"];
@@ -12,15 +12,13 @@ const ALLOWED_ORIGINS = process.env.ALLOWED_ORIGINS
 app.use(
   cors({
     origin: ALLOWED_ORIGINS[0] === "*" ? true : ALLOWED_ORIGINS,
-    methods: ["POST"],
+    methods: ["POST", "GET"],
   })
 );
 app.use(express.json({ limit: "50kb" }));
 
-// Health check
-app.get("/", (_req, res) => {
-  res.json({ status: "ok", service: "sleep-quiz-proxy" });
-});
+// Serve static files (quiz HTML) from /public
+app.use(express.static(path.join(__dirname, "public")));
 
 // Grading endpoint
 app.post("/grade", async (req, res) => {
