@@ -1,0 +1,378 @@
+<!-- Sleep Consultant Training Quiz - Paste this entire block into ClickFunnels Custom HTML -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+#sq-root{font-family:'DM Sans',sans-serif;background:#0f0f13;color:#e8e6e3;min-height:100vh;display:flex;flex-direction:column}
+#sq-root *{box-sizing:border-box;margin:0;padding:0}
+.sq-home{max-width:600px;margin:0 auto;padding:48px 20px;text-align:center}
+.sq-logo{display:inline-block;font-family:'DM Serif Display',serif;font-size:26px;background:linear-gradient(135deg,#6366f1,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;border:2px solid #6366f1;border-radius:12px;padding:8px 16px;margin-bottom:20px;letter-spacing:2px}
+.sq-ht{font-family:'DM Serif Display',serif;font-size:30px;font-weight:400;color:#fff;margin:0 0 12px}
+.sq-hs{font-size:14px;color:#9ca3af;line-height:1.7;margin:0 0 32px}
+.sq-card{width:100%;text-align:left;background:#1a1a24;border:1px solid #2a2a3a;border-radius:16px;padding:24px;cursor:pointer;color:#e8e6e3;font-family:'DM Sans',sans-serif;margin-bottom:24px;font-size:14px}
+.sq-card:hover{border-color:#6366f1}
+.sq-cb{font-size:11px;font-weight:700;color:#a78bfa;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.sq-ct{font-family:'DM Serif Display',serif;font-size:22px;color:#fff;margin-bottom:8px}
+.sq-cd{font-size:13px;color:#6b7280;line-height:1.5;margin-bottom:12px}
+.sq-ca{font-size:14px;font-weight:600;color:#6366f1}
+.sq-rules{background:#1a1a24;border:1px solid #2a2a3a;border-radius:14px;padding:20px;font-size:13px;color:#9ca3af;line-height:1.7;text-align:left}
+.sq-hdr{display:flex;align-items:center;padding:10px 16px;background:#16161f;border-bottom:1px solid #2a2a3a;position:sticky;top:0;z-index:10}
+.sq-bb{background:none;border:none;color:#a78bfa;font-size:18px;cursor:pointer;padding:4px 8px;font-family:'DM Sans',sans-serif}
+.sq-pill{background:rgba(99,102,241,.13);color:#a78bfa;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700}
+.sq-chat{flex:1;overflow-y:auto;padding:16px 16px 160px;max-width:700px;margin:0 auto;width:100%}
+.sq-ctx{background:#1a1a24;border:1px solid #2a2a3a;border-radius:14px;padding:16px;margin-bottom:20px}
+.sq-ctx-label{font-size:11px;font-weight:700;color:#a78bfa;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px}
+.sq-ctx-text{font-size:13px;color:#9ca3af;line-height:1.6}
+.sq-cR{display:flex;gap:8px;margin-bottom:12px;align-items:flex-start}
+.sq-av{width:32px;height:32px;border-radius:50%;background:#2a2a3a;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.sq-cB{background:#1e1e2e;border-radius:4px 14px 14px 14px;padding:10px 14px;max-width:82%;font-size:14px;line-height:1.6;color:#d1d5db}
+.sq-bn{font-size:10px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
+.sq-sR{display:flex;gap:8px;margin-bottom:12px;align-items:flex-start;justify-content:flex-end}
+.sq-sB{background:#162016;border-radius:14px 4px 14px 14px;padding:10px 14px;max-width:82%;font-size:14px;line-height:1.6;color:#d1d5db}
+.sq-snm{font-size:10px;font-weight:700;color:#4ade80;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
+.sq-sa{width:32px;height:32px;border-radius:50%;background:#1a3a1a;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.sq-sB-you{background:#1e1b4b;border-left:3px solid #6366f1}
+.sq-sB-rev{border-left:3px solid #22c55e}
+.sq-cpB{text-align:center;padding:20px 16px;margin:8px 0;background:linear-gradient(135deg,rgba(30,27,75,.13),rgba(49,46,129,.13));border:1px solid rgba(67,56,202,.27);border-radius:14px}
+.sq-cpB-title{font-size:11px;font-weight:700;color:#a78bfa;text-transform:uppercase;letter-spacing:1.5px}
+.sq-cpB-sub{font-size:13px;color:#c4b5fd}
+.sq-gc{background:#1a1a24;border:2px solid;border-radius:14px;padding:20px;margin:12px 0}
+.sq-gc-hdr{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.sq-gc-score{font-size:20px;font-weight:800;color:#fff;padding:6px 16px;border-radius:10px}
+.sq-gc-status{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px}
+.sq-gc-fb{font-size:14px;color:#d1d5db;line-height:1.7;margin-bottom:10px}
+.sq-gc-missed{font-size:13px;color:#fbbf24;background:rgba(251,191,36,.07);padding:8px 12px;border-radius:8px;margin-bottom:6px;line-height:1.5}
+.sq-gc-danger{font-size:13px;color:#f87171;background:rgba(248,113,113,.07);padding:8px 12px;border-radius:8px;margin-bottom:6px;line-height:1.5}
+.sq-gc-reveal{background:#0f2a1a;border:1px solid rgba(22,163,74,.27);border-radius:10px;padding:14px;margin-top:10px}
+.sq-gc-reveal-label{font-size:11px;font-weight:700;color:#4ade80;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.sq-gc-reveal-text{font-size:13px;color:#a7f3d0;line-height:1.6;white-space:pre-wrap}
+.sq-gc-actions{margin-top:14px;display:flex;justify-content:flex-end;gap:10px}
+.sq-iw{position:fixed;bottom:0;left:0;right:0;background:#16161f;border-top:1px solid #2a2a3a;padding:10px 16px 14px;z-index:10}
+.sq-ta{width:100%;min-height:72px;max-height:180px;resize:vertical;padding:10px 14px;background:#0f0f13;border:1px solid #3a3a4a;border-radius:10px;color:#e8e6e3;font-size:14px;font-family:'DM Sans',sans-serif;line-height:1.6;outline:none;box-sizing:border-box}
+.sq-ta:focus{border-color:#6366f1}
+.sq-btn{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;border-radius:10px;padding:10px 22px;font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif}
+.sq-btn:hover{opacity:.9}
+.sq-btn-retry{background:linear-gradient(135deg,#7c3aed,#a78bfa)}
+.sq-btn-reveal{background:linear-gradient(135deg,#ca8a04,#eab308)}
+.sq-btn-dis{opacity:.4;cursor:not-allowed}
+.sq-done{max-width:500px;margin:0 auto;padding:60px 20px;text-align:center}
+.sq-sr{display:flex;justify-content:center;gap:20px;margin-bottom:36px}
+.sq-sb{background:#1a1a24;border-radius:14px;padding:18px 24px;min-width:90px}
+.sq-sn{font-family:'DM Serif Display',serif;font-size:28px;color:#fff}
+.sq-sl{font-size:11px;color:#6b7280;margin-top:4px;text-transform:uppercase;letter-spacing:1px}
+.sq-grading{text-align:center;padding:20px;color:#a78bfa;font-size:14px}
+@keyframes sq-pulse{0%,100%{opacity:.3}50%{opacity:1}}
+.sq-dot{animation:sq-pulse 1s infinite;opacity:.3;font-size:18px}
+.sq-wp{white-space:pre-wrap}
+</style>
+
+<div id="sq-root"></div>
+
+<script>
+(function(){
+var PROXY="";
+var PASS=8, REVEAL_AT=5;
+
+var EDEN={id:"eden",title:"Eden \u2014 Full Sleep Training Journey",baby:"Eden",client:"Emily & Alex",age:"~7 months",
+sleepPlan:"2.5hr wake windows (later adjusted to 3hr), no feeding to sleep, 2 battles (bedtime + nap 1), check-in method with 10-min intervals, drop pacifier.",
+context:"Eden is ~7 months old. Parents Emily and Alex just received The Big 3 sleep plan. Eden has been using a pacifier, being fed/rocked to sleep, and has frequent night wakings. The plan calls for 2.5hr wake windows, no feeding to sleep, and 2 battles (bedtime + first nap). They\u2019ve watched the plan video and are starting tomorrow.",
+messages:[
+{role:"client",text:"So sorry it was a busy day and we are just now watching your video :( We are starting first thing in the morning with your plan!!!"},
+{role:"checkpoint",samantha:"Hey Emily, no problem at all! Just keep in mind that it takes 3 or 4 consistent days of being super strict with it before you see the results. It\u2019s not a linear progression \u2014 you might think it\u2019s not working and then all of a sudden everything clicks into place. So give it 3-4 days of being strict with the plan.\n\nThe only other thing \u2014 I would recommend dropping the pacifier at this time because anything they need to fall asleep is a sleep prop, and it\u2019s not sustainable. I know it\u2019s probably helped up until this point, but it kills two birds with one stone. Babies tend to get confused during sleep training with the pacifier \u2014 like, do I get it this time? Do I not? It confuses them less if you just drop it.\n\nAlso, don\u2019t worry if after the next 3 days they\u2019re still waking up in the middle of the night. We will tackle that after. The big thing we\u2019re trying to get down is getting them to fall asleep on their own at bedtime and that first nap of the day. Once that happens, you\u2019re 90% of the way there because then in the middle of the night when they wake up, they know how to put themselves back to sleep. Night wakings will naturally decrease."},
+{role:"client",text:"Hey there, so Eden also seems to have a little cold and I had a couple questions. Last night in retrospect I did your suggestion wrong and didn\u2019t leave the room but it took about 45 min on me keeping her on her back with my hand stroking her and she screamed but she eventually fell asleep but I was in the room with her. We also cut out the pacifier so I\u2019m glad to hear you say that. After she fell asleep, she woke up again at 12:30 and I had to nurse her to get her heart rate down but I was able to keep her awake until like the last 5 min and it was impossible to keep her up. She then slept 5 hours! At 5:30 she was inconsolable and really snotty so after I suctioned her out, I nursed her a bit. Like 2 min. Now I\u2019m struggling to give her a full feed. Thank you!"},
+{role:"checkpoint",samantha:"OK, the cold definitely doesn\u2019t set you back. If she started vomiting or had a more serious illness, I\u2019d say let\u2019s pause and wait. But a little cold is totally fine \u2014 babies naturally drink less and eat less when they have a cold. My son did the exact same thing, so for now it\u2019s totally fine.\n\nWith the pacifier \u2014 that is amazing! I\u2019m glad you said that. You\u2019re going to really see the benefits. The 5-hour stretch is amazing, going in the right direction. You are doing great \u2014 that\u2019s why I\u2019m here, the coaching aspect is the best part.\n\nYou definitely want to make sure that you leave the room because you being in there, or your hand on her back, would be a sleep prop. It\u2019s not sustainable long term \u2014 if she wakes up in the middle of the night and your hand isn\u2019t there, she\u2019s gonna cry for you. When we eliminate it and get out of the way, they pick up on it quicker.\n\nPut her in the crib awake. I like to say \u2018I love you, you\u2019re safe, go to sleep\u2019 and walk out. Fussing doesn\u2019t count. Give 10 minutes of full blown crying, then go in \u2014 get her heart rate down however you can, even pick her up, but NO feeding, NO pacifier. After her heart rate\u2019s down, put her back in the crib awake and repeat. The main goal is she goes to bed on her own at bedtime without you in there."},
+{role:"client",text:"Yes, that all makes perfect sense thank you! Also, Alex wanted to ask because he was putting her to sleep awake but drowsy at 3 hour mark for naps and she falls asleep by herself. We should still stay at 2.5 hour wake windows?"},
+{role:"samantha",text:"I would stick to the 2.5 wake window now just because she\u2019s still working out of that sleep debt. We can always bump it up after she gets regulated and sleeping through the night :)\n\nAs for the cold just let me know if it gets more severe but I think for now it\u2019s fine! The only thing it might change is if she\u2019s not taking full feeds I would just offer her the breast or bottle multiple times within the wake window before that 45 min mark in case she\u2019s only taking a couple ounces at a time. Does that make sense?"},
+{role:"client",text:"Awesome thank you so much! Last thing for now, we should keep her up until 9:30 or 10?"},
+{role:"samantha",text:"I would do 9:30 if you took her out of the crib at 7 :)"},
+{role:"client",text:"So put her down at 9:30, we did cry it out 5 min first but Alex went in because she got stuck in the corner, then 7 min because she was standing screaming to lay her down, then 10 min, went in picking her up on shoulder and laid down, then 10 more minutes and she fell asleep at the end of that 10! That was about 10am :) still asleep and will wake her if she isn\u2019t up by 11:30."},
+{role:"samantha",text:"That\u2019s HUGE! That\u2019s a big big part. Keep up the good work! You guys are doing great. Seriously that\u2019s big progress, nice work!"},
+{role:"client",text:"Should we wake her at 11 (now) or let her go until 11:30? :)"},
+{role:"samantha",text:"I would let her go until 11:30 :) Rule of thumb I always cap the nap at 2 hours but that\u2019s great she\u2019s going that long!"},
+{role:"client",text:"Sorry I do have a question before I know you\u2019ll be signing off for the day! She will be going down again at 1:45 per schedule because she woke at 11:45. She will likely be waking up around 3pm. Should we keep her awake until 6:30-7 or start bedtime at 5:30?"},
+{role:"checkpoint",samantha:"Great question! I would never start bedtime earlier than 7 because her circadian rhythm just won\u2019t be ready for the night yet. So if you did that she\u2019d likely think it was a nap and wake after an hour. (I have done that before HAHA)\n\nSo if she woke up at 11:45 and you\u2019re doing a 2.5 wake window her next nap would be at 2:15. Then when she wakes up you would just keep her up until 7pm bedtime.\n\nDoes that make sense?"},
+{role:"client",text:"Oh right. Yes I did that math wrong! Yes that makes sense! Thank you and I hope you enjoy the rest of your Sunday!"},
+{role:"samantha",text:"No problem at all. Let me know how tonight goes with bedtime :) You\u2019re doing great! Enjoy your day too!"},
+{role:"client",text:"Hi there Samantha. We had quite a tough night and would love your input. We put Eden down, didn\u2019t start her bedtime routine until 7, she probably took about 30 minutes to fully go down, but she was way less upset and everything seemed really good. Then she woke up again at 8:30 and her sleep pressure was down and she was really upset. Alex gave her a pacifier to calm her down but she spit it out. Then he rocked her and put her down for about 5 minutes. Then I nursed her but she did stay awake. I was wondering if nursing is completely off limits for middle of the night wake-ups, or if we keep them awake that\u2019s OK. Eden is worse with a plugged up nose. She was up pretty much every hour until 2:30, and then it went to every 2 hours."},
+{role:"checkpoint",samantha:"Hey guys, I have literally been there, so I know it\u2019s so hard because sleep training really is not a linear thing. It just seems like chaos and then it clicks into place, so I assure you I\u2019m not worried at all. We\u2019re gonna get her sleeping.\n\nConsistency is key. What you did at bedtime, you\u2019re gonna do for every single wake up in the middle of the night. My consultant told me this too \u2014 you think giving a pacifier sometimes, rocking sometimes is helping, but it\u2019s really just confusing them. How you respond one time is what you do every single time. If you give a pacifier sometimes, feed sometimes, rock sometimes, she\u2019ll scream harder because she knows sometimes that happens.\n\nMake sure she is not drowsy during the bedtime routine. I would honestly toss the pacifier so you\u2019re not even tempted.\n\nFor night wakings: fussing doesn\u2019t count, give her space. Full blown crying, give the full 10 minutes. Go in \u2014 get her heart rate down, no rocking to sleep, no feeding, no pacifier. It\u2019s like a 30-second thing \u2014 patting her butt, a key phrase, pick up if needed. Put her back in awake, repeat.\n\nWith the sickness \u2014 if it\u2019s mild, totally fine to sleep train. If it gets more severe like vomiting, fever, or refusing most daytime feeds, let me know and we\u2019d pause."},
+{role:"client",text:"How should we be handling the midnight wake ups? Should we still do the 10 minute gaps, or just get her back to sleep with pacifier or rocking? Usually we only need one it seems."},
+{role:"checkpoint",samantha:"Same answer \u2014 consistency is key. What you do at bedtime, you do for every single night waking. No pacifier, no rocking to sleep, no feeding. Fussing doesn\u2019t count \u2014 give her space. Full blown crying, give the full 10 minutes. Go in, get her heart rate down briefly, no props, put her back awake, repeat.\n\nI would give the full 10 minutes because if you do less, you might be intervening too quick and the process takes more days. It\u2019s more all at once but faster overall.\n\nShe\u2019s shown she CAN fall asleep on her own at bedtime. Now we need her to learn that the same rules apply at night. The quicker you\u2019re consistent, the quicker she realizes \u2018this is what happens every time\u2019 and stops protesting."},
+{role:"client",text:"Ohhh I see I messed up feeding her then.. so no feeds in the night period? Yes that makes sense. Also, she fell asleep on her own for her nap in 12 min!"},
+{role:"checkpoint",samantha:"That is amazing falling asleep in 12 min! That is huge!! HANG ON to those good moments \u2014 it\u2019s showing she IS catching onto it!\n\nCorrect \u2014 no feeding in the night period. For this age there\u2019s no biological need, so no night feedings. They\u2019ll naturally shift it to during the day.\n\nWhat you\u2019re experiencing is super common. Night two is generally super hard. It\u2019s called an extinction burst \u2014 them crying even harder to see if old habits will come back. If you\u2019re super strict from here on out, within a few days everything will start locking into place. She\u2019s definitely gonna get sleeping. You guys are doing great."},
+{role:"client",text:"Thank you!!"},
+{role:"samantha",text:"Last thing: Will you walk me through exactly what your bedtime routine looks like? Just so I can double check all looks good before tonight :)"},
+{role:"client",text:"Yes! We started exactly at 7pm nursing her fully awake and she got a decent feed in then Carter and I read her a book, we dimmed the lights, changed her and put her in her onesie and sleep sack and sat on the couch watching the fire for a little bit then Alex took her into her room and laid her down. She was asleep by 7:30."},
+{role:"samantha",text:"OK that\u2019s perfect! Only other question \u2014 Did you have to go in there at all? And if so what happened?"},
+{role:"client",text:"5 minutes, 7 minutes, and then 10 minutes. Picked her up, got her heart rate down, calmed her to where she wasn\u2019t screaming anymore then put her back down. As soon as she would touch the bed she would start screaming again. On the last one when she touched the bed she just went right to sleep."},
+{role:"samantha",text:"OK that sounds perfect. Nice work! Just wanted to check but that all sounds great."},
+{role:"client",text:"Is the second nap supposed to be sleep training too? Thought you said before it\u2019s not supposed to be a battle but doing the same thing every nap would make the most consistent."},
+{role:"checkpoint",samantha:"Great question. It\u2019s all about balance \u2014 I got to a point sleep training personally where I felt like I was battling my baby the whole day, and that\u2019s not fun because you want to enjoy them too.\n\nFor nap two, you absolutely could do the same thing if you\u2019re feeling up for it. But if it gets to a point where you feel like you\u2019re battling her 24/7 and it\u2019s wearing on your mental health, just stop and do bedtime and nap one only.\n\nFor any nap not in the crib \u2014 stroller, contact nap, car ride \u2014 the rule is: no pacifier and no feed to sleep, no matter what. And don\u2019t rock her to sleep then put her in the crib \u2014 do it totally outside the room.\n\nLast thing: if it\u2019s after 3 PM, I wouldn\u2019t have her try to fall asleep on her own in the crib because we\u2019re still working out of sleep debt and that\u2019s witching hour where sleep pressure works against her. Before 3 PM, I\u2019ll leave it up to you."},
+{role:"client",text:"Totally makes sense thank you for your thorough response!"},
+{role:"samantha",text:"No problem at all!"},
+{role:"client",text:"Poor baby girl is very tired from last night. It was a rough one. Is there any reason she is going down awake happily at 7pm then waking up in an hour with far less sleep pressure and then it took her 1.5 hours to fall asleep again with crying it out every 10 min method?"},
+{role:"samantha",text:"Can you explain what last night looked like? How long did it take to fall asleep at bedtime? After she woke and then went to sleep again, how frequently did she wake in the night? You guys didn\u2019t rock to sleep or use a pacifier during any of that correct?"},
+{role:"client",text:"She fell asleep almost immediately at 7 and didn\u2019t even cry. She slept for about an hour, then was very awake. We didn\u2019t rock or use a pacifier. Her first nap took about 20 minutes, I had to go in once, no rocking. 2nd nap was 10 minutes, she settled herself. Total yesterday was 3 hours of napping. She was so tired from her second nap at 3:30, we had to put her in the bath to keep her awake. She went down right away for nap today at 9:30, no issues."},
+{role:"checkpoint",samantha:"This all makes perfect sense! Here are my thoughts:\n\n1. You have HUGE wins. Her falling asleep on her own at bedtime and for naps 1 and 2 are BIG. You are closer than you think! I know it looks like chaos but trust me if you keep strict it will fall into place.\n\n2. Keep everything exactly the same for now. Yesterday was Day 1 of being super strict with no sleep props ever. We need 3-4 days before we truly see improvement. It often looks worse before better because she\u2019s protesting not having those props.\n\nThat bedtime issue where she goes to bed happily then wakes 1.5 hours later \u2014 that\u2019s called a \u2018false start.\u2019 She\u2019s not fully regulated yet and is protesting no sleep props. Same thing happened with my baby. It\u2019s common and will go away if you keep going. Same bedtime, same exact thing."},
+{role:"client",text:"That\u2019s great to hear! What should we do for her being so exhausted by 7pm?"},
+{role:"samantha",text:"Just keep doing what you\u2019re doing and be strict. Same bedtime, same thing. You should see drastic improvement within the next few days. If on Friday you still notice it then I can fine tune, but I don\u2019t think we need that \u2014 just her adjusting :)"},
+{role:"client",text:"Bedtime she\u2019s exhausted. Around 6 she gets red eyebrows, rubbing eyes, all the sleep cues and then keeping her up until 7 she is so tired."},
+{role:"checkpoint",samantha:"OK so a small tweak \u2014 everything else stays exactly the same. I think we should go to a 3 hour wake window, kept consistent throughout the day.\n\nThe 2.5 was great up until this point, but based on what\u2019s happening at bedtime, the 3 hour window should fix it. It\u2019ll space out her naps and the last wake window before bedtime will be shorter.\n\nHere\u2019s the key: she\u2019s exhausted when you put her in the crib. That means she doesn\u2019t have to do much work to fall asleep, so she\u2019s not fully developing the skill. We want her way more awake at bedtime so she actually has to develop the skill. That way when she wakes at night, she knows how to go back to sleep.\n\nTomorrow\u2019s schedule: 7AM wake \u2192 Nap 1: 10-11:30 \u2192 Nap 2: 2:30-4 \u2192 Final window 4-7 (should be way more awake at bedtime)."},
+{role:"client",text:"Eden put herself to sleep all but 1x last night and we only had to go in once! She rocked it!!!"},
+{role:"samantha",text:"Let\u2019s go!!!! HUGE improvement!! Keep doing what you\u2019re doing!"},
+{role:"client",text:"Amazing, another full night and she cried around 3 but went back to sleep!!!"},
+{role:"samantha",text:"Amazing!! Love to hear that! I won\u2019t bug you, I\u2019ll check in in a couple days. You guys are crushing it!"},
+{role:"client",text:"Good morning! I forgot about her doc appointment today. Eden woke at 6 with an overflowing diaper, still slept great! But we have a docs appointment at 8:30. Should I try and move it for the schedule??"},
+{role:"checkpoint",samantha:"Her first nap would be at 10 right? Good morning!! So glad she\u2019s sleeping great!\n\nThis is a great question \u2014 it shows how to be flexible. Stay strict with it, but one day a week you\u2019re fine if the first nap isn\u2019t in the crib. Just go to the appointment. If the wake window is a little longer, it\u2019s fine \u2014 it\u2019s just one time.\n\nShe might nap in the car on the way home and it might be shorter, but that\u2019s OK. Whenever she wakes up, just reset the clock, do the 3 hour wake window, and do the next nap in the crib. They just make up for it with the next nap."},
+{role:"client",text:"The last two days she has only napped for 40 minutes and just sits up waiting for us. Few days ago it was 2 hours. Is she overly tired?"},
+{role:"samantha",text:"Is she still sleeping through the night ok??"},
+{role:"client",text:"Yes she is. Down at 7, up at 7."},
+{role:"checkpoint",samantha:"That\u2019s incredible! Continue doing the exact same thing.\n\nNaps are the last thing to fall into place and a little protest is expected. The fact she\u2019s sleeping through the night is key AND it\u2019s huge that she wakes up and just sits there \u2014 that shows she\u2019s comfortable in the crib!\n\nIf she\u2019s just sitting there, leave her until 60-90 minutes. Eventually she\u2019ll start linking sleep cycles and have longer naps. If she\u2019s not crying, 100% leave her \u2014 it still counts and shows she\u2019s comfortable!"},
+{role:"client",text:"So with the 45 minute naps, do we go to the 3 hour wake window? Trying to stick the schedule but the short naps mess it up. What\u2019s the best way to move things around?"},
+{role:"checkpoint",samantha:"If naps are short that day, totally fine. If you need to throw a little cat nap in at the end to make it until bedtime, do it.\n\nI keep the same bedtime every day. Bedtime can be slightly flexible but the main thing is wake-up time stays the same every single day.\n\nFun fact: the first nap is the only restorative one. The other naps are just to get them to bedtime. So a 15-20 minute cat nap at the end is totally fine.\n\nPro tip: if she\u2019s happy through the whole routine and then fusses when you put her in the crib \u2014 just walk out. Picking them up draws more attention to it. Just say \u2018love you, goodbye\u2019 and walk out. Naps are the last thing to lock into place."},
+{role:"client",text:"5:40 here, she\u2019s been fussing to crying for the last 30 minutes. I went in once for a new diaper which seemed to make it worse. Would she be hungry at this point or just needing more time to settle?"},
+{role:"checkpoint",samantha:"Once they\u2019ve consistently slept through the night \u2014 which she has \u2014 hold them to that standard. Even if she wakes at 5:40, fussing doesn\u2019t count. Full crying, give 10 minutes just like normal.\n\nThere\u2019s never a situation where you should feed her because she\u2019s shown you many times she can sleep through. After 6 months there\u2019s no biological need for night feeds \u2014 they eat during the day.\n\nMy son was the same \u2014 going in escalated him more. That\u2019s why fussing doesn\u2019t count and you wait for full crying before starting the 10-minute clock.\n\nSometimes this just happens. They\u2019ll give you perfect sleep then regress with a wake up. You remind them \u2018this is what we do\u2019 and they go back. It\u2019s not linear, but hold her to that standard \u2014 she\u2019s shown you she can do it."}
+]};
+
+var state={screen:"home",scenario:null,visibleCount:0,input:"",isGrading:false,grade:null,attempts:0,allScores:[],revealed:{},passed:{},submittedInput:""};
+var root=document.getElementById("sq-root");
+var advanceTimer=null;
+
+function h(tag,cls,inner,attrs){
+  var el=document.createElement(tag);
+  if(cls)el.className=cls;
+  if(typeof inner==="string")el.innerHTML=inner;
+  else if(inner&&inner.nodeType)el.appendChild(inner);
+  else if(Array.isArray(inner))inner.forEach(function(c){if(c)el.appendChild(c)});
+  if(attrs){for(var k in attrs){if(k==="onclick")el.onclick=attrs[k];else if(k==="oninput")el.oninput=attrs[k];else if(k==="onkeydown")el.onkeydown=attrs[k];else if(k==="disabled")el.disabled=attrs[k];else if(k==="style")el.style.cssText=attrs[k];else el.setAttribute(k,attrs[k])}}
+  return el;
+}
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+
+function render(){
+  root.innerHTML="";
+  if(state.screen==="home")renderHome();
+  else if(state.screen==="quiz")renderQuiz();
+  else if(state.screen==="done")renderDone();
+}
+
+function renderHome(){
+  var wrap=h("div","sq-home");
+  wrap.appendChild(h("div","sq-logo","AS"));
+  wrap.appendChild(h("h1","sq-ht","Sleep Consultant Training"));
+  wrap.appendChild(h("p","sq-hs","Practice responding to real client conversations using Samantha\u2019s method. The conversation flows exactly as it happened \u2014 at key coaching moments, you step in."));
+  var card=h("div","sq-card",null,{onclick:function(){startScenario(EDEN)}});
+  card.appendChild(h("div","sq-cb",esc(EDEN.age)+" \u00b7 "+esc(EDEN.client)));
+  card.appendChild(h("div","sq-ct",esc(EDEN.title)));
+  card.appendChild(h("div","sq-cd",esc(EDEN.context.slice(0,140))+"..."));
+  card.appendChild(h("div","sq-ca","Start Conversation \u2192"));
+  wrap.appendChild(card);
+  wrap.appendChild(h("div","sq-rules","<strong>How it works:</strong> Read through the real conversation. Most messages flow automatically. At key coaching moments, Samantha\u2019s response is hidden and you type yours. Score 8/10+ to continue. Stuck after 5 tries? The real answer is revealed. Final score at the end."));
+  root.appendChild(wrap);
+}
+
+function startScenario(s){
+  state={screen:"quiz",scenario:s,visibleCount:0,input:"",isGrading:false,grade:null,attempts:0,allScores:[],revealed:{},passed:{},submittedInput:""};
+  render();
+  setTimeout(function(){state.visibleCount=1;render();scheduleAdvance()},300);
+}
+
+function scheduleAdvance(){
+  clearTimeout(advanceTimer);
+  var msgs=state.scenario.messages;
+  if(state.visibleCount>=msgs.length)return;
+  var curr=msgs[state.visibleCount];
+  if(curr&&curr.role!=="checkpoint"&&!state.grade){
+    advanceTimer=setTimeout(function(){state.visibleCount++;render();scheduleAdvance()},450);
+  }
+}
+
+function lastClientMsg(){
+  var msgs=state.scenario.messages;
+  for(var i=state.visibleCount-1;i>=0;i--){if(msgs[i].role==="client")return msgs[i].text}return"";
+}
+
+function submitResponse(){
+  var ta=document.getElementById("sq-input");
+  var val=ta?ta.value.trim():"";
+  if(!val)return;
+  state.input=val;state.submittedInput=val;state.isGrading=true;state.grade=null;
+  state.attempts++;render();
+  var curr=state.scenario.messages[state.visibleCount];
+  var prompt="You are grading a sleep consultant trainee. They are learning Samantha\u2019s method from Actually Sleeping.\n\nSCENARIO:\nBaby: "+state.scenario.baby+", Age: "+state.scenario.age+"\nClient: "+state.scenario.client+"\nSleep Plan: "+state.scenario.sleepPlan+"\nBackground: "+state.scenario.context+"\n\nCLIENT MESSAGE:\n\""+lastClientMsg()+"\"\n\nSAMANTHA\u2019S ACTUAL RESPONSE (gold standard):\n\""+curr.samantha+"\"\n\nTRAINEE\u2019S RESPONSE:\n\""+val+"\"\n\nGrade 1-10 on: ACCURACY, KEY POINTS, TONE, DANGEROUS ADVICE. 8+ means solid understanding. Respond ONLY in JSON:\n{\"score\":<1-10>,\"feedback\":\"<2-3 sentences>\",\"missed\":\"<key points missed or None>\",\"dangerous\":\"<bad advice or None>\"}";
+  fetch(PROXY.replace(/\/$/,"")+"/grade",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({messages:[{role:"user",content:prompt}]})}).then(function(r){return r.json()}).then(function(d){
+    var t=(d.content&&d.content[0]&&d.content[0].text)||"";
+    var p=JSON.parse(t.replace(/```json|```/g,"").trim());
+    state.grade=p;state.isGrading=false;
+    state.allScores.push({score:p.score,attempts:state.attempts,index:state.visibleCount});
+    if(p.score>=PASS){state.passed[state.visibleCount]=true;state.revealed[state.visibleCount]=true}
+    else if(state.attempts>=REVEAL_AT){state.revealed[state.visibleCount]=true}
+    render();scrollChat();
+  }).catch(function(){
+    state.grade={score:0,feedback:"Error grading. Check your proxy connection.",missed:"N/A",dangerous:"N/A"};state.isGrading=false;render();
+  });
+}
+
+function advance(){state.grade=null;state.input="";state.submittedInput="";state.attempts=0;state.visibleCount++;render();scheduleAdvance()}
+function retry(){state.grade=null;state.input="";state.submittedInput="";render();setTimeout(function(){var ta=document.getElementById("sq-input");if(ta)ta.focus()},100)}
+
+function scrollChat(){setTimeout(function(){var c=document.getElementById("sq-chat");if(c)c.scrollTop=c.scrollHeight},100)}
+
+function renderQuiz(){
+  var s=state.scenario,msgs=s.messages,vc=state.visibleCount;
+  var visible=msgs.slice(0,vc);
+  var curr=msgs[vc];
+  var atCP=curr&&curr.role==="checkpoint";
+  var isDone=vc>=msgs.length;
+  var tc=msgs.filter(function(m){return m.role==="checkpoint"}).length;
+  var pc=Object.keys(state.passed).length;
+
+  // Header
+  var hdr=h("div","sq-hdr");
+  hdr.appendChild(h("button","sq-bb","\u2190",{onclick:function(){clearTimeout(advanceTimer);state.screen="home";render()}}));
+  var mid=h("div","",null,{style:"flex:1;text-align:center"});
+  mid.appendChild(h("div","",esc(s.baby)+"\u2019s Sleep Training",{style:"font-size:14px;font-weight:600;color:#fff"}));
+  mid.appendChild(h("div","","Client: "+esc(s.client),{style:"font-size:11px;color:#6b7280"}));
+  hdr.appendChild(mid);
+  hdr.appendChild(h("div","sq-pill",pc+"/"+tc));
+  root.appendChild(hdr);
+
+  // Chat
+  var chat=h("div","sq-chat",null,{id:"sq-chat"});
+  
+  // Context
+  var ctx=h("div","sq-ctx");
+  ctx.appendChild(h("div","sq-ctx-label","\ud83d\udccb Sleep Plan Context"));
+  ctx.appendChild(h("div","sq-ctx-text",esc(s.context)));
+  chat.appendChild(ctx);
+
+  // Messages
+  visible.forEach(function(m,i){
+    if(m.role==="client"){
+      var row=h("div","sq-cR");
+      row.appendChild(h("div","sq-av","\ud83d\udc69\u200d\ud83d\udc67"));
+      var bub=h("div","sq-cB");
+      bub.appendChild(h("div","sq-bn","Client"));
+      bub.appendChild(h("div","sq-wp",esc(m.text)));
+      row.appendChild(bub);chat.appendChild(row);
+    } else if(m.role==="samantha"){
+      var row=h("div","sq-sR");
+      var bub=h("div","sq-sB");
+      bub.appendChild(h("div","sq-snm","Samantha"));
+      bub.appendChild(h("div","sq-wp",esc(m.text)));
+      row.appendChild(bub);row.appendChild(h("div","sq-sa","\ud83d\udc69\u200d\u2695\ufe0f"));
+      chat.appendChild(row);
+    } else if(m.role==="checkpoint"&&state.revealed[i]){
+      var row=h("div","sq-sR");
+      var bub=h("div","sq-sB sq-sB-rev");
+      bub.appendChild(h("div","sq-snm","Samantha (revealed)"));
+      bub.appendChild(h("div","sq-wp",esc(m.samantha)));
+      row.appendChild(bub);row.appendChild(h("div","sq-sa","\ud83d\udc69\u200d\u2695\ufe0f"));
+      chat.appendChild(row);
+    }
+  });
+
+  // Checkpoint banner
+  if(atCP&&!isDone){
+    var cpb=h("div","sq-cpB");
+    cpb.appendChild(h("div","","\u270d\ufe0f",{style:"font-size:20px;margin-bottom:4px"}));
+    cpb.appendChild(h("div","sq-cpB-title","Your Turn"));
+    cpb.appendChild(h("div","sq-cpB-sub","Respond to the client as the sleep consultant."));
+    if(state.attempts>0){cpb.appendChild(h("div","","Attempt "+(state.attempts+(state.grade?0:1))+(state.attempts>=3&&!state.grade?" \u00b7 Answer shown at attempt "+REVEAL_AT:""),{style:"font-size:12px;color:#6b7280;margin-top:4px"}))}
+    chat.appendChild(cpb);
+  }
+
+  // Submitted response
+  if(state.grade||state.isGrading){
+    var row=h("div","sq-sR");
+    var bub=h("div","sq-sB sq-sB-you");
+    bub.appendChild(h("div","",null,{style:"font-size:10px;font-weight:700;color:#818cf8;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px"})).textContent="Your Response";
+    bub.appendChild(h("div","sq-wp",esc(state.submittedInput)));
+    row.appendChild(bub);
+    var av=h("div","sq-sa","\ud83c\udf93");av.style.background="#312e81";
+    row.appendChild(av);chat.appendChild(row);
+  }
+
+  // Grading animation
+  if(state.isGrading){
+    var g=h("div","sq-grading");
+    var dots=h("div","",null,{style:"display:flex;justify-content:center;gap:6px;margin-bottom:8px"});
+    [0,.2,.4].forEach(function(d){var dot=h("span","sq-dot","\u25cf");dot.style.animationDelay=d+"s";dots.appendChild(dot)});
+    g.appendChild(dots);g.appendChild(document.createTextNode("Grading..."));
+    chat.appendChild(g);
+  }
+
+  // Grade card
+  if(state.grade){
+    var gr=state.grade,pass=gr.score>=PASS;
+    var gc=h("div","sq-gc");gc.style.borderColor=pass?"#16a34a":"#dc2626";
+    var ghdr=h("div","sq-gc-hdr");
+    var sc=h("div","sq-gc-score",gr.score+"/10");sc.style.background=pass?"linear-gradient(135deg,#16a34a,#22c55e)":"linear-gradient(135deg,#dc2626,#ef4444)";
+    ghdr.appendChild(sc);
+    var st=h("div","sq-gc-status",pass?"PASSED \u2713":"NEEDS IMPROVEMENT");st.style.color=pass?"#4ade80":"#f87171";
+    ghdr.appendChild(st);gc.appendChild(ghdr);
+    gc.appendChild(h("div","sq-gc-fb",esc(gr.feedback)));
+    if(gr.missed&&gr.missed!=="None")gc.appendChild(h("div","sq-gc-missed","<strong>Missed:</strong> "+esc(gr.missed)));
+    if(gr.dangerous&&gr.dangerous!=="None")gc.appendChild(h("div","sq-gc-danger","<strong>\u26a0\ufe0f Caution:</strong> "+esc(gr.dangerous)));
+    
+    if(state.revealed[vc]&&!pass){
+      var rev=h("div","sq-gc-reveal");
+      rev.appendChild(h("div","sq-gc-reveal-label","Samantha\u2019s Actual Response"));
+      rev.appendChild(h("div","sq-gc-reveal-text",esc(curr.samantha)));
+      gc.appendChild(rev);
+    }
+    
+    var acts=h("div","sq-gc-actions");
+    if(pass){acts.appendChild(h("button","sq-btn","Continue \u2192",{onclick:advance}))}
+    else if(state.revealed[vc]){acts.appendChild(h("button","sq-btn sq-btn-reveal","Continue (revealed) \u2192",{onclick:advance}))}
+    else{acts.appendChild(h("button","sq-btn sq-btn-retry","Try Again",{onclick:retry}))}
+    gc.appendChild(acts);chat.appendChild(gc);
+  }
+
+  // Done
+  if(isDone&&!atCP){
+    var d=h("div","",null,{style:"text-align:center;padding:32px"});
+    d.appendChild(h("div","","\ud83c\udf89",{style:"font-size:40px;margin-bottom:8px"}));
+    d.appendChild(h("div","","Conversation Complete!",{style:"font-size:18px;font-weight:600;color:#fff;margin-bottom:8px"}));
+    d.appendChild(h("button","sq-btn","See Results \u2192",{onclick:function(){state.screen="done";render()}}));
+    chat.appendChild(d);
+  }
+
+  root.appendChild(chat);
+
+  // Input area
+  if(atCP&&!state.grade&&!state.isGrading){
+    var iw=h("div","sq-iw");
+    var ta=h("textarea","sq-ta",null,{id:"sq-input",placeholder:"Type your response to the client...",onkeydown:function(e){if(e.key==="Enter"&&(e.metaKey||e.ctrlKey))submitResponse()}});
+    ta.value=state.input;
+    ta.oninput=function(e){state.input=e.target.value};
+    iw.appendChild(ta);
+    var foot=h("div","",null,{style:"display:flex;justify-content:space-between;align-items:center;margin-top:8px"});
+    foot.appendChild(h("span","","\u2318+Enter to submit",{style:"font-size:12px;color:#4b5563"}));
+    var btn=h("button","sq-btn","Submit",{onclick:submitResponse});
+    foot.appendChild(btn);
+    iw.appendChild(foot);root.appendChild(iw);
+    setTimeout(function(){ta.focus()},100);
+  }
+
+  setTimeout(scrollChat,150);
+}
+
+function renderDone(){
+  var best={};state.allScores.forEach(function(s){if(!best[s.index]||s.score>best[s.index])best[s.index]=s.score});
+  var bv=Object.values(best);var avg=bv.length?(bv.reduce(function(a,b){return a+b},0)/bv.length).toFixed(1):"0";
+  var pc=bv.filter(function(s){return s>=PASS}).length;
+
+  var wrap=h("div","sq-done");
+  wrap.appendChild(h("div","","\ud83c\udf89",{style:"font-size:56px;margin-bottom:12px"}));
+  wrap.appendChild(h("h1","sq-ht","Conversation Complete!"));
+  wrap.appendChild(h("p","",esc(state.scenario.title),{style:"font-size:16px;color:#a78bfa;margin:0 0 32px"}));
+  var sr=h("div","sq-sr");
+  [{n:avg,l:"Avg Score"},{n:pc+"/"+bv.length,l:"Passed"},{n:""+state.allScores.length,l:"Attempts"}].forEach(function(x){
+    var sb=h("div","sq-sb");sb.appendChild(h("div","sq-sn",x.n));sb.appendChild(h("div","sq-sl",x.l));sr.appendChild(sb);
+  });
+  wrap.appendChild(sr);
+  wrap.appendChild(h("button","sq-btn","\u2190 Back to Home",{onclick:function(){state.screen="home";render()}}));
+  root.appendChild(wrap);
+}
+
+render();
+})();
+</script>
